@@ -1,8 +1,8 @@
 @RestController
-class GreetingsRestController {
+class YoDawgRestController {
 
-  @GetMapping("/hi/{name}")
-  def hi(@PathVariable String name){
-    [ greeting : "Hello, " + name +"!" ]
+  @GetMapping("/")
+  def hi(){
+    return "Hello!"
   }
 }
